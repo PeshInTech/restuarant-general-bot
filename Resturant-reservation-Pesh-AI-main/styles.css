@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    height: 100%;
+    background-image: url('project images/robynne-o-HOrhCnQsxnQ-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+ 
+
+.home {
+    width: 50vw;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact {
+    width: 50vw;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    display: flex;
+    min-width: 300px;
+    flex-direction: column;
+    align-items: center;
+
+}
+.form-input {
+    min-width: 300px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background: rgba(250, 249, 249, 0.557);
+    
+}
+
+.contact textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.typewriter h2 {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: monospace;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .12em;
+    font-size: clamp(1.2rem, 4vw, 2.5rem);
+    max-width: 95vw;
+    box-sizing: border-box;
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+@media (max-width: 700px) {
+    .typewriter h2 {
+        font-size: 0.8rem;
+        letter-spacing: .08em;
+        max-width: 80vw;
+    }
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
+
+#submit-button {
+    background-color: hsl(39, 90%, 31%);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: hsl(39, 90%, 41%);
+    }
+}

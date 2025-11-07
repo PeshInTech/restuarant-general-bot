@@ -1,4 +1,5 @@
 AI Chatbot — n8n + Supabase RAG
+https://customcx-leads-chatbot.netlify.app/
 
 Lightweight, production-ready example that shows how to build an AI-powered chatbot orchestrated from n8n with a Supabase RAG (retrieval-augmented generation) backend. Designed to be embedded on any website (static or dynamic) via a small client snippet.
 
